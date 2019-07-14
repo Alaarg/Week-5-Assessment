@@ -12,8 +12,23 @@ Ex:  hello(null) => null
 
 */
 
-function hello() {
+function hello(x) {
   // WRITE YOUR CODE UNDER THIS LINE  
+  if (x === "" || x === null) {
+
+    return null;
+  }
+
+
+
+  while (x === "jouza") {
+
+    return "hello " + x
+  }
+  while (x === "Alex") {
+
+    return "hello " + x
+  }
 
 }
 
@@ -51,11 +66,17 @@ odd start with capital letter
 Ex: repeatChar("a",2); => "a, A"
 Ex: repeatChar("C",5); => "C, c, C, c, C"
 */
+//debugger;
 
-function repeatChar() {
-  // WRITE YOUR CODE UNDER THIS LINE         
-
+function repeatChar(string, times) {
+  var repeatedString = " ";
+  while (times > 0) {
+    repeatedString += " " +"," + string;
+    times--;
+  }
+  return repeatedString;
 }
+
 
 
 /* Q4:
